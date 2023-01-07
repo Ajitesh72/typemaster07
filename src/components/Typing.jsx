@@ -25,19 +25,24 @@ function Typing() {
   const [Acc, setAcc] = useState("");
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuthkey"));
 
+  var docRef
+
   React.useEffect(() => {
+   
+    if(isAuth){
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
       if (user) {
         const currentUserId = auth.currentUser.uid;
-        const docRef = doc(db, "users", currentUserId);
+         docRef = doc(db, "users", currentUserId);
         const unsub = onSnapshot(doc(db, "users", currentUserId), (doc) => {
           setWPM(doc.data().highestWPM);
           setAcc(doc.data().highestAccuracy);
         });
+      
         // ...
       }
-    });
+    });}
   }, []);
 
   const paragraph =

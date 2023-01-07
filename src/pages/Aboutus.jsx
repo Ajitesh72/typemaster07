@@ -14,12 +14,14 @@ function Aboutus() {
   const [email, setEmail] = useState("");
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuthkey"));
 
+  var docRef
+
   useEffect(() => {
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
       if (user) {
         const currentUserId = auth.currentUser.uid;
-        const docRef = doc(db, "contactUs", currentUserId);
+        docRef = doc(db, "contactUs", currentUserId);
 
         const unsub = onSnapshot(doc(db, "users", currentUserId), (doc) => {
           setfirstName(doc.data().firstName);
@@ -37,6 +39,7 @@ function Aboutus() {
       email,
       message,
     });
+    alert("WE WILL RESPOND BACK TO YOU WITHIN 24 HOURS")
   }
   function handleChange(event) {
     setMessage(event.target.value);
