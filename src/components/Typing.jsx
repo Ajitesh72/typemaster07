@@ -10,7 +10,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 function Typing() {
   // document.body.style.setProperty("background-image", `url(${TypingPage})`);
 
-  const [timer, setTimer] = useState(30);
+  const [timer, setTimer] = useState(5);
   const [typeStarted, setTypeStarted] = useState(false);
   const [typeEnded, setTypeEnded] = useState(false);
   const [showresult, setShowresult] = useState(false);
@@ -125,7 +125,7 @@ function Typing() {
         if (finalMarks > 0) {
           setAccuracy((finalMarks / max) * 100);
         }
-        setWordsperminute(finalMarks * 2);
+        setWordsperminute(finalMarks * 12);
       }
     }
 
