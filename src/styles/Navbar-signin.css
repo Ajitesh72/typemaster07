@@ -1,0 +1,52 @@
+.loginNavbar {
+  display: flex;
+  gap: 58%;
+  margin-right: 7%;
+}
+
+.loginNavbar-text {
+  /* display: inline-block; */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  word-wrap: break-word;
+}
+.loginNavbar-text:hover {
+  text-decoration: underline rgb(255, 255, 255);
+  color: rgb(140, 209, 255);
+}
+.loginNavbar-1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.loginNavbar-2 {
+  display: flex;
+}
+
+@media only screen and (max-width: 1255px) {
+  .loginNavbar {
+    gap: 53%;
+    padding-right: 7%;
+  }
+}
+@media only screen and (max-width: 1059px) {
+  .loginNavbar {
+    gap: 43%;
+    padding-right: 7%;
+  }
+}
+@media only screen and (max-width: 922px) {
+  .loginNavbar {
+    gap: 33%;
+    padding-right: 7%;
+  }
+}
+@media only screen and (max-width: 806px) {
+  .loginNavbar {
+    padding-right: 0;
+    gap: 30%;
+    display: none;
+  }
+}

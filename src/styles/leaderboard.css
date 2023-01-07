@@ -1,0 +1,120 @@
+.leaderboard {
+  color: #000000;
+}
+.leaderboard-body {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  background-color: white;
+  mix-blend-mode: overlay;
+}
+.leaderboard-body-1 {
+  margin-left: 4.5%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 55%;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.leaderboard-body-label {
+  display: flex;
+  font-size: 1em;
+  gap: 30px;
+  margin-right: 5%;
+
+}
+
+.leaderboard-body-2 {
+  margin-left: 5%;
+  font-size: 2em;
+  height: 13em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.sortbyWPM {
+  display: flex;
+}
+.WPM-value {
+  width: 105%;
+  color: rgb(255, 0, 0);
+}
+@media screen and (max-width: 1375px) {
+  .leaderboard-body-label {
+    gap: 10px;
+  }
+  .leaderboard-body-1 {
+    gap: 50%;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .leaderboard-body {
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 2%;
+    background-color: white;
+    mix-blend-mode: overlay;
+  }
+  .leaderboard-body-1 {
+    gap: 40%;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .leaderboard-body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .leaderboard-body-1 {
+    gap: 30%;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 915px) {
+  .leaderboard-body-1 {
+    gap: 30%;
+    display: contents;
+  }
+  .leaderboard-body-label {
+    margin-left: 10%;
+  }
+  .game-name {
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+  .break-Sortby {
+    display: none;
+  }
+}
+@media screen and (max-width: 630px) {
+  .leaderboard-body {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+    background-color: white;
+    mix-blend-mode: overlay;
+  }
+
+  .leaderboard-body-1 {
+    gap: 2%;
+    display: contents;
+  }
+  .leaderboard-body-label {
+    margin-left: 10%;
+  }
+  .game-name {
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+  .break-Sortby {
+    display: none;
+  }
+  .leaderboard-body-1 {
+    font-size: 1.3em;
+  }
+  .leaderboard-body-2 {
+    margin-left: 1%;
+    font-size: 1.5em;
+    height: 13em;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}

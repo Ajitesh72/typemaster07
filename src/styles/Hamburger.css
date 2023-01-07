@@ -1,0 +1,105 @@
+.hamburgerNav {
+  display: none;
+  color: white;
+}
+ul {
+  cursor: pointer;
+}
+
+.hamburgerNav-2 {
+  background-image: url("../assets/pictures/Typing.svg");
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+
+  opacity: 400%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.hamburgerMenu {
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 806px) {
+  .hamburgerNav {
+    display: flex;
+    gap: 55%;
+  }
+  .Hamburger-title {
+    font-size: 2em;
+  }
+  .hamburgerNav-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hamburgerMenu {
+    margin-top: 4.5%;
+  }
+  .hamburgerNav-2 {
+    padding: 40%;
+  }
+}
+@media only screen and (max-width: 706px) {
+  .hamburgerNav {
+    display: flex;
+    gap: 50%;
+  }
+  .hamburgerNav-2 {
+    padding: 39%;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .hamburgerNav {
+    display: flex;
+    gap: 47%;
+  }
+  .hamburgerMenu {
+    margin-top: 4.5%;
+  }
+  .hamburgerNav-2 {
+    padding: 35% 40% 100%;
+  }
+}
+@media only screen and (max-width: 594px) {
+  .hamburgerNav {
+    display: flex;
+    gap: 43%;
+  }
+  .hamburgerMenu {
+    margin-top: 4.5%;
+  }
+  .hamburgerNav-2 {
+    padding: 35% 40% 100%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .hamburgerNav {
+    display: flex;
+    gap: 33%;
+  }
+}
+@media only screen and (max-width: 437px) {
+  .Hamburger-title {
+    font-size: 1.5em;
+  }
+  .hamburgerNav {
+    display: flex;
+    gap: 35%;
+  }
+
+  .hamburgerNav-2 {
+    padding: 35% 31% 250%;
+  }
+}
+@media only screen and (max-width: 359px) {
+  .Hamburger-title {
+    font-size: 1.3em;
+  }
+  .hamburgerNav {
+    display: flex;
+    gap: 30%;
+  }
+}

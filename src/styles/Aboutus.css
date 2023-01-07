@@ -1,0 +1,257 @@
+.aboutUs {
+  display: flex;
+  gap: 10%;
+}
+
+.map {
+  margin-left: 7%;
+  margin-top: 4%;
+}
+
+.aboutUs-texts {
+  padding-top: 3%;
+}
+
+.aboutUs-1 {
+  color: white;
+  font-size: 2em;
+  /* width:150%; */
+}
+.aboutUs-2 {
+  color: rgb(0, 0, 0);
+  font-size: 3.5em;
+}
+.aboutUs-3 {
+  color: white;
+  font-size: 2em;
+}
+
+.contactUs-input {
+  width: 95%;
+  height: 3em;
+}
+.aboutUs-submit {
+  margin-left: 17%;
+  width: 15em;
+  height: 3em;
+  font-size: 1.005em;
+  background: #1c08ff;
+  mix-blend-mode: normal;
+  border: none;
+  color: aliceblue;
+}
+.aboutUs-submit:hover {
+  margin-left: 17%;
+
+  width: 15em;
+  height: 3em;
+  font-size: 1.15em;
+
+  background-image: linear-gradient(to right, #1c08ff, #0095ff);
+}
+h1 {
+  color: rgb(224, 240, 255);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1210px) {
+  .aboutUs-1 {
+    font-size: 1.7em;
+  }
+  .aboutUs-2 {
+    font-size: 2.5em;
+  }
+  .aboutUs-3 {
+    font-size: 1.7em;
+  }
+  .br-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1052px) {
+  .aboutUs-1 {
+    font-size: 1.7em;
+  }
+  .aboutUs-2 {
+    font-size: 2.5em;
+  }
+  .aboutUs-3 {
+    font-size: 1.7em;
+  }
+  .aboutUs-submit {
+    margin-left: 1%;
+  }
+  .aboutUs-submit:hover {
+    margin-left: 1%;
+  }
+}
+@media screen and (max-width: 1011px) {
+  .aboutUs-1 {
+    font-size: 1.4em;
+  }
+  .aboutUs-2 {
+    font-size: 2.3em;
+  }
+  .aboutUs-3 {
+    font-size: 1.4em;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  .aboutUs-texts {
+    padding-top: 8%;
+  }
+  .dj-map {
+    width: 23em;
+    height: 20em;
+  }
+  .map {
+    padding: 0 2%;
+    margin-top: 8%;
+  }
+  .contactUs-input {
+    width: 25em;
+  }
+}
+@media screen and (max-width: 910px) {
+  .contactUs-input {
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 814px) {
+  .dj-map {
+    width: 32em;
+    height: 16em;
+  }
+  .aboutUs {
+    display: contents;
+  }
+  .map {
+    /* padding: 0 20%; */
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 9%;
+  }
+  .aboutUs-texts {
+    padding-top: 1.5%;
+    margin-left: 18%;
+    margin-right: 15%;
+  }
+  .aboutUs-1 {
+    display: none;
+  }
+  .aboutUs-2 {
+    font-size: 2em;
+  }
+  .aboutUs-3 {
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+
+  .contactUs-input {
+    width: 40%;
+    height: 3em;
+  }
+  .aboutUs-submit {
+    width: 17em;
+    height: 2em;
+    margin-left: 0;
+    margin-top: 0.5em;
+  }
+  .aboutUs-submit:hover {
+    width: 17em;
+    height: 2em;
+    margin-left: 0;
+    margin-top: 0.5em;
+  }
+  .contactUs-input {
+    width: 40em;
+  }
+}
+@media screen and (max-width: 735px) {
+  .dj-map {
+    width: 32em;
+    height: 16em;
+  }
+  .aboutUs {
+    display: contents;
+  }
+  .map {
+    padding-left: 4%;
+    margin-top: 9%;
+  }
+  .aboutUs-texts {
+    padding-top: 1.5%;
+    margin-left: 11%;
+  }
+}
+@media screen and (max-width: 625px) {
+  .dj-map {
+    width: 27em;
+    height: 16em;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  .aboutUs-submit {
+    width: 13em;
+    height: 2em;
+  }
+  .aboutUs-submit:hover {
+    width: 13em;
+    height: 2em;
+  }
+  .contactUs-input {
+    width: 30em;
+  }
+}
+@media screen and (max-width: 492px) {
+  .dj-map {
+    width: 22em;
+    height: 16em;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  .aboutUs-submit {
+    width: 10.5em;
+    height: 2em;
+  }
+  .aboutUs-submit:hover {
+    width: 10.5em;
+    height: 2em;
+  }
+  .contactUs-input {
+    width: 25em;
+  }
+}
+@media screen and (max-width: 428px) {
+  .dj-map {
+    width: 20em;
+    height: 16em;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .dj-map {
+    width: 17em;
+    height: 16em;
+  }
+  .aboutUs-submit {
+    width: 8em;
+    height: 2em;
+  }
+  .aboutUs-submit:hover {
+    width: 8em;
+    height: 2em;
+  }
+  .contactUs-input {
+    width: 19em;
+  }
+}

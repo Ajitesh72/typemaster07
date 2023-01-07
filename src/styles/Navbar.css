@@ -1,0 +1,36 @@
+.Trial {
+  
+  font-style: normal;
+  font-size: 1.5em;
+  word-wrap: break-word;
+  word-wrap: break-word;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+}
+
+.Trial:hover {
+  text-decoration: underline rgb(255, 255, 255);
+}
+
+.Header-1 {
+  display: flex;
+  justify-content: flex-start;
+  gap:40%;
+}
+.Header-2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 591px) {
+  .Trial {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 806px) {
+  .Header-1 {
+    padding-right: 0;
+    gap: 30%;
+    display: none;
+  }
+}

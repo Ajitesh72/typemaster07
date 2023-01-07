@@ -1,0 +1,275 @@
+.loginNavbar {
+  display: flex;
+  gap: 65%;
+}
+
+.loginNavbar-text {
+  display: inline-block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: white;
+  word-wrap: break-word;
+}
+.loginNavbar-text:hover {
+  text-decoration: underline rgb(255, 255, 255);
+}
+
+.loginBody-signup {
+  color: White;
+  padding: 0% 19%;
+  margin-top: 6.5%;
+}
+
+.loginBody-signup-1 {
+  font-size: 1.5em;
+}
+.loginBody-signup-2 {
+  margin: 0;
+  font-size: 4em;
+}
+
+.loginBody-signup-3 {
+  display: flex;
+  margin-left: 4.8%;
+  justify-content: flex-start;
+  gap: 0.5%;
+}
+
+.loginBody-signup_login {
+  color: red;
+}
+
+.loginBody-signup_login:hover {
+  color: red;
+  text-decoration: underline rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.loginForm {
+  padding: 0;
+  margin: 0;
+  padding-left: 22%;
+}
+
+.form1 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.formInput-firstName {
+  background: #fffafa;
+  width: 15em;
+  height: 2.3em;
+  mix-blend-mode: overlay;
+  border-radius: 5px;
+  border: none;
+}
+.formInput-lastName {
+  background: #fffafa;
+  width: 15em;
+  height: 2.3em;
+  margin-left: 4%;
+  mix-blend-mode: overlay;
+  border-radius: 5px;
+  border: none;
+}
+.loginBody-signup-email {
+  background: #fffafa;
+  height: 2.3em;
+  width: 34em;
+  mix-blend-mode: overlay;
+  border-radius: 5px;
+  border: none;
+}
+.loginBody-signup-password {
+  background: #fffafa;
+  height: 2.3em;
+  width: 34em;
+  mix-blend-mode: overlay;
+  border-radius: 5px;
+  border: none;
+}
+.createAccount {
+  margin-left: 9%;
+  width: 15em;
+  height: 3em;
+  background: #1c08ff;
+  mix-blend-mode: normal;
+  border: none;
+  font-size: 1em;
+  color: aliceblue;
+}
+.createAccount:hover {
+  margin-left: 8%;
+  width: 15em;
+  height: 3em;
+  font-size: 1.1em;
+  background-image: linear-gradient(to right, #1c08ff, #0095ff);
+  cursor: pointer;
+}
+@media only screen and (max-width: 1009px) {
+  .loginBody-signup {
+    padding: 0% 16%;
+    margin-top: 6.5%;
+  }
+  .formInput-firstName {
+    width: 14.5em;
+    height: 2.3em;
+  }
+  .formInput-lastName {
+    width: 14.5em;
+    height: 2.3em;
+  }
+  .loginBody-signup-email {
+    height: 2.5em;
+    width: 31.5em;
+  }
+  .loginBody-signup-password {
+    height: 2.5em;
+    width: 31.5em;
+  }
+}
+@media only screen and (max-width: 793px) {
+  .loginBody-signup {
+    color: White;
+    padding: 0%;
+    margin-top: 6.5%;
+    margin-left: 6.5%;
+  }
+  .loginForm {
+    padding: 0;
+    margin: 0;
+    padding-left: 0%;
+    margin-left: 18%;
+  }
+}
+@media only screen and (max-width: 669px) {
+  .formInput-firstName {
+    width: 14em;
+    height: 2.3em;
+  }
+  .formInput-lastName {
+    width: 14em;
+    height: 2.3em;
+  }
+  .loginBody-signup-email {
+    height: 2.3em;
+    width: 30em;
+  }
+  .loginBody-signup-password {
+    height: 2.3em;
+    width: 30em;
+  }
+  .loginBody-signup-3 {
+    display: flex;
+    margin-left: 7%;
+    justify-content: flex-start;
+    gap: 0.5%;
+  }
+}
+@media only screen and (max-width: 629px) {
+  .loginBody-signup-2 {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 509px) {
+  .loginBody-signup {
+    margin-left: 1%;
+  }
+  .loginForm {
+    margin-left: 8%;
+  }
+
+  .formInput-firstName {
+    width: 12em;
+    height: 2.3em;
+  }
+  .formInput-lastName {
+    width: 12em;
+    height: 2.3em;
+  }
+  .loginBody-signup-email {
+    height: 2.3em;
+    width: 26em;
+  }
+  .loginBody-signup-password {
+    height: 2.3em;
+    width: 26em;
+  }
+  .loginBody-signup-3 {
+    display: flex;
+    margin-left: 7%;
+    justify-content: flex-start;
+    gap: 0.5%;
+  }
+  .loginBody-signup-3 {
+    display: flex;
+    margin-left: 8%;
+    justify-content: flex-start;
+    gap: 0.5%;
+  }
+}
+@media only screen and (max-width: 445px) {
+  .loginBody-signup {
+    margin-left: 0%;
+  }
+  .loginForm {
+    margin-left: 10%;
+  }
+  .loginBody-signup-2 {
+    font-size: 2em;
+  }
+
+  .formInput-firstName {
+    width: 12em;
+    height: 2.7em;
+  }
+  .formInput-lastName {
+    width: 12em;
+    height: 3em;
+  }
+  .loginBody-signup-email {
+    height: 3em;
+    width: 25.5em;
+  }
+  .loginBody-signup-password {
+    height: 3em;
+    width: 25.5em;
+  }
+}
+@media only screen and (max-width: 381px) {
+  .loginBody-signup {
+    margin-left: 0%;
+  }
+  .loginForm {
+    margin-left: 10%;
+  }
+  .loginBody-signup-2 {
+    font-size: 2em;
+  }
+
+  .formInput-firstName {
+    width: 21em;
+    height: 2.7em;
+    margin-left: 2%;
+  }
+  .formInput-lastName {
+    width: 21em;
+    height: 3em;
+  }
+  .loginBody-signup-email {
+    height: 3em;
+    width: 22em;
+  }
+  .loginBody-signup-password {
+    height: 3em;
+    width: 22em;
+  }
+  .formInput-firstName,
+  .formInput-lastName {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}

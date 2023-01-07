@@ -1,0 +1,138 @@
+.loginBody {
+  color: White;
+  padding: 0% 19%;
+  margin-top: 6.5%;
+}
+
+.loginBody-1 {
+  font-size: 1.5em;
+}
+.loginBody-2 {
+  margin: 0;
+  font-size: 4em;
+}
+
+.loginBody-3 {
+  display: flex;
+  margin-left: 4.8%;
+  justify-content: flex-start;
+  gap: 0.5%;
+}
+
+.loginBody-3_login {
+  color: red;
+}
+.loginBody-3_login:hover {
+  color: red;
+  text-decoration: underline rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.loginForm {
+  padding: 0;
+  margin: 0;
+  padding-left: 22%;
+}
+
+.form1 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.formInput-email {
+  background: #fffafa;
+  height: 2.3em;
+  width: 34em;
+  mix-blend-mode: overlay;
+  border-radius: 5px;
+  border: none;
+}
+.formInput-password {
+  background: #fffafa;
+  height: 2.3em;
+  width: 34em;
+  mix-blend-mode: overlay;
+  border-radius: 5px;
+  border: none;
+}
+.createAccount {
+  margin-left: 9%;
+  width: 15em;
+  height: 3em;
+  background: #1c08ff;
+  mix-blend-mode: normal;
+  border: none;
+  font-size: 1em;
+  color: aliceblue;
+}
+.createAccount:hover {
+  margin-left: 8%;
+  width: 15em;
+  height: 3em;
+  font-size: 1.1em;
+  background-image: linear-gradient(to right, #1c08ff, #0095ff);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 661px) {
+  .loginBody {
+    padding: 0%;
+    margin-left: 4%;
+  }
+  .loginBody-3 {
+    margin-left: 9%;
+  }
+  .form-2 {
+    padding: 0;
+    margin: 0;
+    margin-left: 1%;
+  }
+}
+@media only screen and (max-width: 578px) {
+  .formInput-email {
+    background: #fffafa;
+    height: 2.3em;
+    width: 30em;
+    mix-blend-mode: overlay;
+    border-radius: 5px;
+    border: none;
+  }
+  .formInput-password {
+    background: #fffafa;
+    height: 2.3em;
+    width: 30em;
+    mix-blend-mode: overlay;
+    border-radius: 5px;
+    border: none;
+  }
+}
+@media only screen and (max-width: 456px) {
+  .formInput-email {
+    margin-top: 4%;
+    height: 3em;
+    width: 25em;
+    mix-blend-mode: overlay;
+    border-radius: 5px;
+    border: none;
+  }
+  .formInput-password {
+    margin-top: 4%;
+    background: #fffafa;
+    height: 3em;
+    width: 25em;
+    mix-blend-mode: overlay;
+    border-radius: 5px;
+    border: none;
+  }
+  .loginBody-1 {
+    font-size: 1em;
+  }
+  .loginBody-2 {
+    margin: 0;
+    font-size: 2em;
+  }
+  .loginBody {
+    padding: 0%;
+    margin-left: 0%;
+  }
+}

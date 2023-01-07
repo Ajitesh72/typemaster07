@@ -1,0 +1,12 @@
+
+*{
+    margin-left: 0;
+    margin-right: 0;
+}
+body{
+    background-image: url("./assets/pictures/Typing.svg");
+    background-color: rgb(2, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* resize: vertical; */
+}
