@@ -25,24 +25,22 @@ function Typing() {
   const [Acc, setAcc] = useState("");
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuthkey"));
 
-  var docRef
+  var docRef;
 
   React.useEffect(() => {
-   
-    if(isAuth){
-    const auth = getAuth();
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        const currentUserId = auth.currentUser.uid;
-         docRef = doc(db, "users", currentUserId);
-        const unsub = onSnapshot(doc(db, "users", currentUserId), (doc) => {
-          setWPM(doc.data().highestWPM);
-          setAcc(doc.data().highestAccuracy);
-        });
-      
-        // ...
-      }
-    });}
+    if (isAuth) {
+      const auth = getAuth();
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          const currentUserId = auth.currentUser.uid;
+          docRef = doc(db, "users", currentUserId);
+          const unsub = onSnapshot(doc(db, "users", currentUserId), (doc) => {
+            setWPM(doc.data().highestWPM);
+            setAcc(doc.data().highestAccuracy);
+          });
+        }
+      });
+    }
   }, []);
 
   const paragraph =
@@ -84,7 +82,6 @@ function Typing() {
         highestWPM: WPM,
       });
     }
-
     const data1 = {
       highestWPM: wordsPerMinute,
     };
@@ -142,76 +139,76 @@ function Typing() {
     setModal(true);
   }
   return (
-   <>
-      <Navbar isAuth={isAuth} setIsAuth={setIsAuth} />
+    <>
+      <Navbar/>
       <Hamburger />
       <span className="scene__home">
-      <div className="Header">
-        <br />
-        <div className="Heading-Headder">
-          <ul className="Heading">TYPEMASTER</ul>
-          {timer > 0 ? (
-            <p className="TIMER" style={{ height: { timer } }}>
-              TIMER:{timer}
-            </p>
-          ) : (
-            <p className="TIMER">NO TIME LEFT</p>
-          )}
-        </div>
-        <div>
-          <p className="Sentence">
-            Mental health is not just a concept that refers to an individual's
-            psychological and emotional well being.Rather it's a state of
-            psychological and emotional well being where an individual is able
-            to use their cognitive and emotional capabilities, meet the ordinary
-            demand and functions in the society.
-          </p>
-        </div>
-        <form>
-          {timer > 0 ? (
-            <textarea
-              className="input-hoga"
-              type="text"
-              style={{ resize: "none" }}
-              placeholder="TYPE HERE TO START THE TIME...."
-              onChange={handleChange}
-            />
-          ) : (
-            <textarea
-              className="input-hoga"
-              type="text"
-              style={{ resize: "none" }}
-              placeholder="TYPE HERE TO START THE TIME...."
-              onChange={handleChange}
-              disabled={true}
-            />
-          )}
-        </form>
-        {modal && (
-          <div className="modal">
-            <div onClick={toggleModal} className="overlay"></div>
-            <div className="modal-content">
-              <h2>YOUR RESULT</h2>
-              <p>
-                WORDS PER MINUTES:{wordsPerMinute}
-                <br />
-                ACCURACY:{accuracy}%
+        <div className="Header">
+          <br />
+          <div className="Heading-Headder">
+            <ul className="Heading">TYPEMASTER</ul>
+            {timer > 0 ? (
+              <p className="TIMER" style={{ height: { timer } }}>
+                TIMER:{timer}
               </p>
-              <button className="close-modal" onClick={toggleModal}>
-                CLOSE
-              </button>
-            </div>
+            ) : (
+              <p className="TIMER">NO TIME LEFT</p>
+            )}
           </div>
-        )}
-        <br />
-        {showresult == true && (
-          <button className="showResult" onClick={resultHandler}>
-            Show result
-          </button>
-        )}{" "}
-        <br />
-      </div>
-    </span>
+          <div>
+            <p className="Sentence">
+              Mental health is not just a concept that refers to an individual's
+              psychological and emotional well being.Rather it's a state of
+              psychological and emotional well being where an individual is able
+              to use their cognitive and emotional capabilities, meet the
+              ordinary demand and functions in the society.
+            </p>
+          </div>
+          <form>
+            {timer > 0 ? (
+              <textarea
+                className="input-hoga"
+                type="text"
+                style={{ resize: "none" }}
+                placeholder="TYPE HERE TO START THE TIME...."
+                onChange={handleChange}
+              />
+            ) : (
+              <textarea
+                className="input-hoga"
+                type="text"
+                style={{ resize: "none" }}
+                placeholder="TYPE HERE TO START THE TIME...."
+                onChange={handleChange}
+                disabled={true}
+              />
+            )}
+          </form>
+          {modal && (
+            <div className="modal">
+              <div onClick={toggleModal} className="overlay"></div>
+              <div className="modal-content">
+                <h2>YOUR RESULT</h2>
+                <p>
+                  WORDS PER MINUTES:{wordsPerMinute}
+                  <br />
+                  ACCURACY:{accuracy}%
+                </p>
+                <button className="close-modal" onClick={toggleModal}>
+                  CLOSE
+                </button>
+              </div>
+            </div>
+          )}
+          <br />
+          {showresult == true && (
+            <button className="showResult" onClick={resultHandler}>
+              Show result
+            </button>
+          )}{" "}
+          <br />
+        </div>
+      </span>
     </>
   );
 }
