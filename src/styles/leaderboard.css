@@ -5,8 +5,10 @@
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 2%;
-  background-color: white;
-  mix-blend-mode: overlay;
+  background: linear-gradient(to right, #e2e2e2, rgb(81, 0, 255));
+  border-radius: 10px;
+  opacity: 80%;
+  /* mix-blend-mode: overlay; */
 }
 .leaderboard-body-1 {
   margin-left: 4.5%;
@@ -36,7 +38,7 @@
 }
 .WPM-value {
   width: 105%;
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
 }
 @media screen and (max-width: 1375px) {
   .leaderboard-body-label {
@@ -51,8 +53,7 @@
     margin-left: 9%;
     margin-right: 9%;
     margin-top: 2%;
-    background-color: white;
-    mix-blend-mode: overlay;
+   
   }
   .leaderboard-body-1 {
     gap: 40%;
@@ -89,8 +90,7 @@
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 2%;
-    background-color: white;
-    mix-blend-mode: overlay;
+  
   }
 
   .leaderboard-body-1 {

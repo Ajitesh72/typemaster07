@@ -123,7 +123,7 @@ function Typing() {
         if (finalMarks > 0) {
           setAccuracy((finalMarks / max) * 100);
         }
-        setWordsperminute(finalMarks * 12);
+        setWordsperminute(finalMarks * 2);
       }
     }
 
