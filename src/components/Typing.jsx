@@ -28,7 +28,7 @@ function Typing() {
   var docRef;
 
   React.useEffect(() => {
-    if (isAuth) {
+    // if (isAuth) {
       const auth = getAuth();
       onAuthStateChanged(auth, (user) => {
         if (user) {
@@ -40,8 +40,9 @@ function Typing() {
           });
         }
       });
-    }
+    // }
   }, []);
+  
 
   const paragraph =
     "Mental Health Is Not Just A Concept That Refers To An Individual's Psychological And Emotional Well Being.Rather It's A State Of Psychological And Emotional Well Being Where An Individual Is Able To Use Their Cognitive And Emotional Capabilities, Meet The Ordinary Demand And Functions In The Society";
@@ -140,6 +141,7 @@ function Typing() {
   }
   return (
     <>
+    {isAuth ? <div>
       <Navbar/>
       <Hamburger />
       <span className="scene__home">
@@ -209,6 +211,7 @@ function Typing() {
           <br />
         </div>
       </span>
+      </div>:<h1>PLEASE SIGN IN TO VIEW THIS PAGE</h1>}
     </>
   );
 }

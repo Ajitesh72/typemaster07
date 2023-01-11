@@ -34,15 +34,15 @@ function App() {
           path="/aboutus"
           element={<Aboutus/>}
         />
-        {isAuth &&
+        
         <Route
           path="/Typing"
           element={<Typing/>}
-        />}
+        />
        
         <Route
           path="/*"
-          element={<h1>SOMETHING WENT WRONG</h1>}
+          element={<h1>PAGE NOT FOUND</h1>}
         />
       </Routes>
     </div>

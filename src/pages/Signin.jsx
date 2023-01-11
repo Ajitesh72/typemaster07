@@ -19,7 +19,8 @@ function Signin() {
     signInWithEmailAndPassword(auth, Email, Password)
       .then((userCredentials) => {
         localStorage.setItem("isAuthkey", true);
-        alert(userCredentials.user.uid);
+        alert("WELCOME BACK");
+        // alert(userCredentials.user.uid);
         navigate("/Typing");
       })
       .catch((error) => {
